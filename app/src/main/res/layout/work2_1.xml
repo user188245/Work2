@@ -37,7 +37,8 @@
                 android:id="@+id/editText1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="점수 입력." />
+                android:hint="점수 입력"
+                android:inputType="numberDecimal" />
         </TableRow>
 
         <TableRow
@@ -54,7 +55,8 @@
                 android:id="@+id/editText2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="점수 입력." />
+                android:hint="점수 입력"
+                android:inputType="numberDecimal"/>
         </TableRow>
 
         <TableRow
@@ -71,7 +73,8 @@
                 android:id="@+id/editText3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="점수 입력." />
+                android:hint="점수 입력"
+                android:inputType="numberDecimal"/>
         </TableRow>
 
         <Button
@@ -117,7 +120,7 @@
                 android:id="@+id/t2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0점" />
+                android:text="0.0점" />
         </TableRow>
 
         <TableRow
@@ -136,7 +139,6 @@
                 android:layout_height="wrap_content"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/a" />
-
         </TableRow>
 
 
