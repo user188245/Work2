@@ -7,12 +7,14 @@
     android:weightSum="1">
 
 
+
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="레스토랑을 시작하려면 아래를 클릭하세요."
-        android:textSize="20dp"/>
+        android:textSize="15dp"/>
 
 
     <LinearLayout
@@ -29,13 +31,22 @@
             android:textStyle="bold"/>
 
         <TextView
-            android:id="@+id/text_elapsedTime"
+            android:id="@+id/textViewTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="예약시작 경과시간 : 00:00"
+            android:text="예약시작 경과시간 : "
             android:textColor="#ff2020"
             android:textStyle="bold"
+            android:layout_weight="5"
+            android:visibility="invisible"/>
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="2"
+            android:textColor="#ff2020"
+            android:textStyle="bold"
             android:visibility="invisible"/>
 
     </LinearLayout>
@@ -61,6 +72,7 @@
             android:visibility="invisible" />
 
         <GridLayout
+            android:id="@+id/layout_count"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#20ff0000"
@@ -75,7 +87,7 @@
                 android:layout_columnWeight="1"/>
 
             <EditText
-                android:id="@+id/editText1"
+                android:id="@+id/editTextAdult"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnSpan="2"
@@ -90,7 +102,7 @@
                 android:layout_columnWeight="1"/>
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/editTextTeen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnSpan="2"
@@ -105,7 +117,7 @@
                 android:layout_columnWeight="1"/>
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/editTextChild"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnSpan="2"
@@ -118,6 +130,7 @@
         </GridLayout>
 
         <LinearLayout
+            android:id="@+id/layout_result"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -217,23 +230,26 @@
 
 
     <LinearLayout
+        android:id="@+id/layout_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:visibility="invisible">
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/buttonPrev"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_weight="1"
+            android:clickable="false"
             android:text="이전" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonNext"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_weight="1"
+            android:clickable="false"
             android:text="다음" />
     </LinearLayout>
 
