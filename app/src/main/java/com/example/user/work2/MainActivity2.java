@@ -146,7 +146,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         @RequiresApi(api = Build.VERSION_CODES.M)
         private void yieldResult(){
-            textDate.setText(datePicker.getYear() + "년 " + datePicker.getMonth() + "월 " + datePicker.getDayOfMonth() +"일");
+            textDate.setText(datePicker.getYear() + "년 " + (datePicker.getMonth()+1) + "월 " + datePicker.getDayOfMonth() +"일");
             textTime.setText(timePicker.getHour() + "시 " + timePicker.getMinute()+ "분");
             textAdultNum.setText(editTextAdult.getText() + "명");
             textTeenNum.setText(editTextTeen.getText() + "명");
