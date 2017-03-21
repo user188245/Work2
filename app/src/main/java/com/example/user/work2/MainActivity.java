@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init(){
+        setTitle("학점 계산기");
         e1 = (EditText)findViewById(R.id.editText1);
         e2 = (EditText)findViewById(R.id.editText2);
         e3 = (EditText)findViewById(R.id.editText3);
